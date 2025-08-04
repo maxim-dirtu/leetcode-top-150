@@ -4,13 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
+        char[][] board = new char[][]
+       {
+    new char[] { '8', '3', '.', '.', '7', '.', '.', '.', '.' },
+    new char[] { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
+    new char[] { '.', '9', '.', '.', '.', '.', '.', '6', '.' },
+    new char[] { '.', '.', '.', '.', '6', '.', '.', '.', '3' },
+    new char[] { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+    new char[] { '7', '.', '.', '.', '2', '.', '.', '.', '6' },
+    new char[] { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+    new char[] { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
+    new char[] { '.', '.', '.', '.', '8', '.', '.', '7', '9' }
+       };
 
-        int[] nums = [0, 1, 2, 2, 3, 0, 4, 2];
-            int val = 2;
-        int result = 0;
-
-
-       result = Problem027_RemoveElement.RemoveElement(nums, val);
+        var result = Problem036_ValidSudoku.IsValidSudoku(board);
 
         Console.WriteLine(result);
 
